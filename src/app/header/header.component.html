@@ -5,12 +5,13 @@
         class="header__middle"
         (ngSubmit)="onFormSubmit($event)"
     >
-        <img src="../../assets/images/icons/logo.svg" />
+        <img class="header__logo" src="../../assets/images/icons/logo.svg" />
         <input
-            [(ngModel)]="searchQuery"
+            class="header__input"
             name="searchQuery"
+            [(ngModel)]="searchQuery"
         />
-        <button>search</button>
+        <button class="header__search button">search</button>
     </form>
     <div class="header__right">
         <p>Your name</p>
