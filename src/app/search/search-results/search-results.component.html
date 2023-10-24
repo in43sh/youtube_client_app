@@ -2,10 +2,22 @@
     <div class="card" *ngFor="let item of data">
         <img class="card__img" src="{{item.snippet.thumbnails.high.url}}" />
         <div class="card__engagement-metrics">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
+            <div>
+                <img src="../../../assets/images/icons/view.svg" />
+                <p>1000</p>
+            </div>
+            <div>
+                <img src="../../../assets/images/icons/like.svg" />
+                <p>680</p>
+            </div>
+            <div>
+                <img src="../../../assets/images/icons/dislike.svg" />
+                <p>320</p>
+            </div>
+            <div>
+                <img src="../../../assets/images/icons/comment.svg" />
+                <p>250</p>
+            </div>
         </div>
         <p class="card__title">{{item.snippet.title}}</p>
         <button class="card__button">more...</button>
