@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
+import { SearchItemComponent } from './search-item/search-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SearchComponent
+    SearchComponent,
+    SearchItemComponent
   ],
   imports: [
     BrowserModule
