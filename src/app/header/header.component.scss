@@ -1,13 +1,10 @@
 .header {
     display: flex;
     justify-content: space-between;
-    // width: 100%;
     background-color: rgb(217, 217, 217);
-    // background-color: rgb(199, 41, 41);
 
     &__left {
         width: 100px;
-        // height: 20px;
     }
 
     &__middle {

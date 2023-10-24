@@ -11,15 +11,11 @@ const apiKey = environment.apiKey;
 export class YoutubeDataServiceService {
   @Output() trigger: EventEmitter<any> = new EventEmitter();
 
-    constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-    triggerSearch(value: string) {
-        this.trigger.emit(value);
-    }
-
-    searchYouTube(query: string) {
-      this.http.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=${apiKey}`).subscribe(data => {
-          this.trigger.emit(data);
-      });
+  searchYouTube(query: string) {
+    this.http.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=${apiKey}`).subscribe(data => {
+      this.trigger.emit(data);
+    });
   }
 }
