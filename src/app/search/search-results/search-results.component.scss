@@ -1,6 +1,9 @@
 .card {
     display: flex;
     flex-direction: column;
+    width: 327px;
+    padding: 20px;
+    background-color: white;
 
     &__img {
         width: 100%;
@@ -10,5 +13,14 @@
     &__engagement-metrics {
         display: flex;
         justify-content: space-between;
+    }
+
+    &__title {
+        font-weight: bold;
+    }
+
+    &__button {
+        background-color: blue;
+        color: white;
     }
 }
