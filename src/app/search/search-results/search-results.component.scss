@@ -27,6 +27,7 @@
     &__engagement-metrics {
         display: flex;
         justify-content: space-between;
+        width: 100%;
         margin-top: 20px;
     }
 
@@ -47,5 +48,11 @@
         border: 0;
         box-shadow: 2px 0px 4px 0px #2F80ED;
         cursor: pointer;
+    }
+}
+
+.engagement-metrics {
+    &__item {
+        display: flex;
     }
 }

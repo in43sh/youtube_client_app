@@ -1,12 +1,17 @@
 <div class="header">
     <div class="header__left">
-        <!-- <p>left</p> -->
     </div>
-    <div class="header__middle">
+    <form
+        class="header__middle"
+        (ngSubmit)="onFormSubmit($event)"
+    >
         <img src="../../assets/images/icons/logo.svg" />
-        <input />
+        <input
+            [(ngModel)]="searchQuery"
+            name="searchQuery"
+        />
         <button>search</button>
-    </div>
+    </form>
     <div class="header__right">
         <p>Your name</p>
         <img src="../../assets/images/icons/profile.svg" />

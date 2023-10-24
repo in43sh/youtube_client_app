@@ -16,11 +16,11 @@ import { SearchResultsComponent } from './search/search-results/search-results.c
     SearchComponent,
     SearchItemComponent,
     SearchResultsComponent,
-    FormsModule
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

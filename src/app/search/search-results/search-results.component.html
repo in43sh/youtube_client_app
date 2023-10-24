@@ -1,20 +1,27 @@
-<div class="cards">
-    <div class="card" *ngFor="let item of data">
+<!-- <div *ngIf="results?.items">
+    <div *ngFor="let item of results.items">
+        <h2>{{item.snippet.title}}</h2>
+        <img src="{{item.snippet.thumbnails.default.url}}" alt="Video thumbnail">
+        <p>{{item.snippet.description}}</p>
+    </div>
+</div> -->
+<div class="cards" *ngIf="results?.items">
+    <div class="card" *ngFor="let item of results.items">
         <img class="card__img" src="{{item.snippet.thumbnails.high.url}}" />
         <div class="card__engagement-metrics">
-            <div>
+            <div class="engagement-metrics__item">
                 <img src="../../../assets/images/icons/view.svg" />
                 <p>1000</p>
             </div>
-            <div>
+            <div class="engagement-metrics__item">
                 <img src="../../../assets/images/icons/like.svg" />
                 <p>680</p>
             </div>
-            <div>
+            <div class="engagement-metrics__item">
                 <img src="../../../assets/images/icons/dislike.svg" />
                 <p>320</p>
             </div>
-            <div>
+            <div class="engagement-metrics__item">
                 <img src="../../../assets/images/icons/comment.svg" />
                 <p>250</p>
             </div>
