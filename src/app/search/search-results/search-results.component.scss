@@ -1,0 +1,14 @@
+.card {
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__engagement-metrics {
+        display: flex;
+        justify-content: space-between;
+    }
+}

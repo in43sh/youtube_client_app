@@ -8,6 +8,11 @@
         // height: 20px;
     }
 
+    &__middle {
+        display: flex;
+        align-items: center;
+    }
+
     &__right {
         display: flex;
         align-items: center;
