@@ -1,0 +1,21 @@
+<div class="header">
+    <div class="header__left">
+    </div>
+    <form
+        class="header__middle"
+        (ngSubmit)="onFormSubmit($event)"
+    >
+        <img class="header__logo" src="../../assets/images/icons/logo.svg" />
+        <input
+            class="header__input"
+            name="searchQuery"
+            placeholder="What are you want to find out?"
+            [(ngModel)]="searchQuery"
+        />
+        <button class="header__search button">search</button>
+    </form>
+    <div class="header__right">
+        <p>Your name</p>
+        <img src="../../assets/images/icons/profile.svg" />
+    </div>
+</div>
